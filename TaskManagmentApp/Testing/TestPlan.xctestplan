@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "2CDFF8C3-41F9-4795-BDF9-6F6E4F40D83B",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "testTimeoutsEnabled" : true
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:TaskManagmentApp.xcodeproj",
+        "identifier" : "AD19F1A62A5C94E300D5FFC8",
+        "name" : "TaskManagmentAppTests"
+      }
+    }
+  ],
+  "version" : 1
+}
