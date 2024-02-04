@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD03E9462B6F923900041CD9 /* AllTasksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD03E9452B6F923900041CD9 /* AllTasksView.swift */; };
 		AD0544D82A6664F300313086 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0544D72A6664F300313086 /* User.swift */; };
 		AD0544DB2A66652500313086 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = AD0544DA2A66652500313086 /* Realm */; };
 		AD0544DD2A66652500313086 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AD0544DC2A66652500313086 /* RealmSwift */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AD03E9452B6F923900041CD9 /* AllTasksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllTasksView.swift; sourceTree = "<group>"; };
 		AD0544D72A6664F300313086 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		AD0544DF2A66661400313086 /* Migrator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Migrator.swift; sourceTree = "<group>"; };
 		AD0544E12A6667F000313086 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				AD0544ED2A69146E00313086 /* HomeView_v2.swift */,
 				AD0544EF2A6914C100313086 /* CalendarTasksView_v2.swift */,
 				AD177B922A6C00DE009D4454 /* AddNewTaskView.swift */,
+				AD03E9452B6F923900041CD9 /* AllTasksView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -354,6 +357,7 @@
 				AD62A5C42A57545400E3D53E /* Spinner.swift in Sources */,
 				AD0544F22A69153100313086 /* ProgressCircleView.swift in Sources */,
 				AD0544F02A6914C100313086 /* CalendarTasksView_v2.swift in Sources */,
+				AD03E9462B6F923900041CD9 /* AllTasksView.swift in Sources */,
 				AD0544E22A6667F000313086 /* MainView.swift in Sources */,
 				AD6E2BEA2A5553A60024A8CA /* OnBoardingView.swift in Sources */,
 				AD0544E42A666A5D00313086 /* UserManager.swift in Sources */,

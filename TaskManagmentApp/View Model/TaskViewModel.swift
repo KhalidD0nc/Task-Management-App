@@ -171,6 +171,27 @@ class TaskManager: ObservableObject {
 
     }
     
+    func getTasksForMonthNamed(monthName: String) -> [TaskModel] {
+        let calendar = Calendar.current
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MMMM" // format for month name
+        guard let monthNumber = dateFormatter.monthSymbols.firstIndex(of: monthName.capitalized) else { return [] }
+        
+        let tasksForMonth = tasks.filter { task in
+            guard let taskDate = task.date else { return false }
+            let taskMonth = calendar.component(.month, from: taskDate)
+            // Adding 1 because `firstIndex` is 0-based and January is 1 in `Calendar.Component.month`
+            return taskMonth == monthNumber + 1
+        }
+        
+        return tasksForMonth.sorted { (task1, task2) in
+            guard let task1Date = task1.date, let task2Date = task2.date else { return false }
+            return task1Date < task2Date
+        }
+    }
+
+    
+    
     
     func isAchievementCompleted(achievement: String) -> Bool {
         switch achievement {

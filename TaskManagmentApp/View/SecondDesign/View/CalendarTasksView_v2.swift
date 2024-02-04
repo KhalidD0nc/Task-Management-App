@@ -81,7 +81,7 @@ struct CalendarTasksView_v2: View {
                         .padding(.top)
                     Spacer()
                 } .padding()
-                Text("You have 4 tasks today")
+                Text("You have \(taskViewModel.getTasksForToday().count) \(taskViewModel.getTasksForToday().count > 1 ? "tasks" : "task") today")
                     .font(.subheadline)
                     .fontWeight(.bold)
                     .foregroundColor(.gray)
