@@ -11,6 +11,7 @@ struct HomeView_v2: View {
     let tasks = ["Make UI/UX", "Record a video", "Edit View", "RUNING  for 4km", "Increase Performance", "Make UI/UX", "Record a video", "Edit View", "RUNING  for 4km", "Increase Performance"]
 
     @State private var isShowing: Bool = false
+    @State private var isShowingAllTasksView: Bool = false
     @State var isCompleted: Bool = false
     @EnvironmentObject private var vm: TaskManager
     var body: some View {
@@ -58,7 +59,10 @@ struct HomeView_v2: View {
         } .fullScreenCover(isPresented: $isShowing) {
             CalendarTasksView_v2()
         }
-    
+        .fullScreenCover(isPresented: $isShowingAllTasksView){
+            AllTasksView()
+        }
+     
         
     }
      
@@ -151,7 +155,7 @@ struct HomeView_v2: View {
             Spacer()
             if showSeeMoreButton {
                 Button {
-                    
+                    isShowingAllTasksView.toggle()
                 } label: {
                     Text("See All tasks")
                         .foregroundColor(.black)
